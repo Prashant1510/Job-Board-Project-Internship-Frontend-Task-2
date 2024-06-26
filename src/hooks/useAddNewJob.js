@@ -4,12 +4,13 @@ import toast from "react-hot-toast";
 
 const UseAddNewJob = () =>{
     // const navigate = useNavigate();
+    const BASE_URL = import.meta.env.VITE_BASE_URL;
 
     const AddJobData = async ({ jobTitle, companyName, jobDescription, jobLocation, jobType, jobExperience, jobIncome, jobPosts, applyBeforeDate, jobURL ,companyWebsite , companyId}) =>{
         const success = handleCompanyInputError({ jobTitle, companyName, jobDescription, jobLocation, jobType, jobExperience, jobIncome, jobPosts, applyBeforeDate, jobURL ,companyWebsite, companyId })
         if(success) return;
         try {
-            const res = await fetch("http://localhost:5000/api/saveJobData/savejob",{
+            const res = await fetch(`${BASE_URL}/api/saveJobData/savejob`,{
                 method : "POST",
                 headers:{"content-Type":"application/json"},
                 body: JSON.stringify({ jobTitle, companyName, jobDescription, jobLocation, jobType, jobExperience, jobIncome, jobPosts, applyBeforeDate, jobURL ,companyWebsite, companyId }),
@@ -34,7 +35,7 @@ const UseAddNewJob = () =>{
 
         try {
             console.log(id);
-            const res = await fetch(`http://localhost:5000/api/deleteCompanyPostedJob/deleteCompanyJobs${id}`,{
+            const res = await fetch(`${BASE_URL}/api/deleteCompanyPostedJob/deleteCompanyJobs${id}`,{
                 method: "DELETE",
                 headers:{
                     "content-Type":"application/json"
