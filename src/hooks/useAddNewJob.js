@@ -34,7 +34,6 @@ const UseAddNewJob = () =>{
     const DeleteJobData = async(id) =>{
 
         try {
-            console.log(id);
             const res = await fetch(`${BASE_URL}/api/deleteCompanyPostedJob/deleteCompanyJobs${id}`,{
                 method: "DELETE",
                 headers:{

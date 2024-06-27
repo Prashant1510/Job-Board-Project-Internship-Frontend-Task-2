@@ -17,8 +17,6 @@ const JobCard = (props) => {
   }
 
   let desc = `${jobDescription}`;
-  console.log(desc.length);
-  console.log(jobDescription.length);
 
   let lastDate = handleLastDate(applyBeforeDate)
   return (

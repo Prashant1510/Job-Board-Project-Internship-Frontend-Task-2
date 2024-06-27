@@ -37,7 +37,6 @@ const SignUp = () => {
   };
   const handleCompanySubmit = async (e) => {
     e.preventDefault();
-    console.log(companyInputs);
     await CompanySignup(companyInputs);
   };
 

@@ -31,7 +31,6 @@ const AddNewJob = () => {
         }
         const data = await res.json();
         setJobs(data);
-        console.log(data);
       } catch (error) {
         toast.error(error.message);
       }
@@ -60,7 +59,6 @@ const AddNewJob = () => {
   const handleCompanySubmit = async (e) => {
     e.preventDefault();
 
-    console.log(inputs);
 
     await AddJobData(inputs);
   };
