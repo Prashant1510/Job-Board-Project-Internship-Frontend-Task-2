@@ -22,6 +22,7 @@ const navigate = useNavigate();
       if(res.ok){
         localStorage.removeItem('userData');
         navigate('/')
+        window.location.reload();
         toast.success("Successfully Sign Out")
       }
     } catch (error) {
