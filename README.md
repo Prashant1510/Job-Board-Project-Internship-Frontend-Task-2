@@ -45,7 +45,7 @@ JobBoard/
 
 ## 📬 Contact
 If you have any questions, feel free to reach out:
-- 📧 Email: your-email@example.com
+- 📧 Email: mauryaprashant1510@gmail.com
 - 💼 LinkedIn: [My LinkedIn](https://www.linkedin.com/in/prashant-maurya-017776246/)
 - 🐙 GitHub: [@Prashant1510](https://github.com/Prashant1510)
 
